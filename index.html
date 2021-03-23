@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add To Cart System</title>
+
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+        crossorigin="anonymous" />
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <a class="navbar-brand" href="#">Add To Cart</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse " id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link  " href="cart.html"> Cart <i class="fas fa-cart-plus"></i>
+                        </a>
+                </li>
+                
+            </ul>
+        </div>
+    </nav>
+    <br><br><br>
+
+<!-- Main  -->
+<div class="container">
+    <h1>Featured Services</h1>
+    <hr><br>
+    <div class="row">
+        <div class="col">
+            <div class="card" style="width: 18rem;">
+                <img class="card-img-top" src="images/webd.png" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">Web Development</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                        the card's content.</p>
+                    <a href="#" onclick="addItem('Web Development+10000')" id="add-1"
+                        class="add-service btn btn-primary">Add to Cart</a>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card" style="width: 18rem;">
+                <img class="card-img-top" src="images/appd.jpg" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">App Development</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                        the card's content.</p>
+                        <a href="#" onclick="addItem('App Development+15000')" id="add-2"
+                        class="add-service btn btn-primary">Add to Cart</a>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card" style="width: 18rem;">
+                <img class="card-img-top" src="images/iotml.jpg" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">IOT & ML</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                        the card's content.</p>
+                        <a href="#" onclick="addItem('IOT ML+20000')" id="add-3"
+                        class="add-service btn btn-primary">Add to Cart</a>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card" style="width: 18rem;">
+                <img class="card-img-top" src="images/devops.jpg" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">Devops & Transformation</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                        the card's content.</p>
+                        <a href="#" onclick="addItem('Devops & Transformation+30000')" id="add-4"
+                        class="add-service btn btn-primary">Add to Cart</a>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card" style="width: 18rem;">
+                <img class="card-img-top" src="images/cloud.png" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">Cloud Migration</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                        the card's content.</p>
+                        <a href="#" onclick="addItem('Cloud Migration+25000')" id="add-5"
+                        class="add-service btn btn-primary">Add to Cart</a>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card" style="width: 18rem;">
+                <img class="card-img-top" src="images/net.jpg" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">Networking & Storage</h5>
+                    <p class="card-text">A   network service is an application running at the network application
+                        layer and above, that provides data storage, manipulation, presentation, communication or
+                        other capability which is often implemented .......</p>
+                        <a href="#" onclick="addItem('Networking & Storage+50000')" id="add-6"
+                        class="add-service btn btn-primary">Add to Cart</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+    <br>
+    <br>
+
+    
+    <!-- Footer section started -->
+    <footer class="bg-dark text-secondary">
+
+
+        <p>© Copyright Add to Cart Website</p>
+        <p>Developed By Ankit Pithalia</p>
+
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"
+        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous">
+    </script>
+    <script src="main.js"></script>
+</body>
+
+</html>
