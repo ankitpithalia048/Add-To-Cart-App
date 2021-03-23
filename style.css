@@ -1,0 +1,36 @@
+
+  body {
+    padding-top: 80px;
+}
+
+  
+
+  
+  ul li a:hover{
+    border: 1px solid rgb(221, 217, 231);    
+  }
+  
+  .onhover{
+    cursor: pointer;
+  
+  }
+   
+
+      .show-cart{
+        max-width: 1080px;
+        margin: auto;
+        margin-top: 50px;
+        height: auto;
+    }
+    
+/* footer section */
+footer {
+
+    background-color: rgb(49, 49, 49);
+    padding: 1em 1em;
+    color: rgb(82, 82, 82);
+    text-align: center;
+}
+.card{
+    margin-bottom: 2rem;
+}
